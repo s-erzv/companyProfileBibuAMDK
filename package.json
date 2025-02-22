@@ -1,0 +1,19 @@
+{
+  "name": "projecttailwind",
+  "version": "1.0.0",
+  "description": "Project Landing Page Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i src/input.css -o dist/output.css --watch",
+    "prettier": "npx prettier --write '**/*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "serzv",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.9"
+  }
+}

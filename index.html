@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Landing Page with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-white font-poppins text-[#272f78]">
+    
+  <header class="w-full bg-white border-b border-[#272f78] fixed top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center">
+        <img src="/src/img/bibu logo.jpeg" alt="" class="w-24 h-auto">
+          <h1 class="text-xl font-bold text-gray-800">BIBU AMDK</h1>
+      </div>
+        <nav>
+            <ul class="flex gap-8">
+                <li><a href="#" class="text-black hover:text-white hover:bg-[#6f78c9] hover:px-3 hover:py-1.5 rounded-full font-medium">Beranda</a></li>
+                <li><a href="#" class="text-black hover:text-white hover:bg-[#6f78c9] hover:px-3 hover:py-1.5 rounded-full font-medium">Produk</a></li>
+                <li><a href="#pricelist" class="text-black hover:text-white hover:bg-[#6f78c9] hover:px-3 hover:py-1.5 rounded-full font-medium">Pricelist</a></li>
+                <li><a href="#lokasi" class="text-black hover:text-white hover:bg-[#6f78c9] hover:px-3 hover:py-1.5 rounded-full font-medium">Lokasi</a></li>
+                <li><a href="#kontak" class="text-black hover:text-white hover:bg-[#6f78c9] hover:px-3 hover:py-1.5 rounded-full font-medium">Kontak</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="bg-[#272F78] px-4 py-2 rounded-full text-white">Hubungi Kami</a>
+    </div>
+  </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="w-full h-[700px] flex flex-col items-center text-left p-10 bg-[url(/src/img/dekstop.png)] bg-cover bg-center bg-no-repeat">
+        <div class="flex">
+          <div class="h-auto w-[450px] my-[150px] ml-14 px-8 py-12 items-center justify-center bg-white rounded-2xl border border-[#272F78] shadow-lg">
+            <h1 class="text-[38px] font-bold text-[#272f78]">Rasakan Kesegaran Alami dalam Setiap Tetes</h1>
+            <p class="text-gray-600 mt-2">Dapatkan air minum berkualitas tinggi dengan kemurnian terbaik untuk hari yang lebih segar.</p>
+            <div class="mt-4 flex gap-4">
+                <button class="bg-[#272f78] border text-white px-5 py-2 rounded-full hover:bg-white border-[#272f78] hover:text-[#272f78]">Beli Sekarang</button>
+                <button class="border border-[#272f78] text-[#272f78] hover:bg-[#272f78] hover:text-white px-5 py-2 rounded-full">Hubungi Kami</button>
+            </div>
+          </div>
+          <img src="/src/img/404 (1).png" alt="" class="w-[700px] h-auto mt-[-50px] mr-[-50px]">
+        </div>
+    </section>
+
+    <!-- Mitra Bisnis -->
+    <section id="mitra" class="bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0 ml-10">
+                    <h2 class="text-5xl font-semibold">Mitra Bisnis</h2>
+                    <p class="text-sm text-gray-600">Bergabung sebagai Agen. Dapatkan Penghasilan Tambahan</p>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full"></div>
+                    <div class="w-32 h-32 bg-gray-300 rounded-full"></div>
+                    <div class="w-32 h-32 bg-gray-300 rounded-full"></div>
+                    <div class="w-32 h-32 bg-gray-300 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="produk" class="py-16">
+        <div class="container mx-auto text-center items-center justify-center">
+            <h2 class="text-4xl font-semibold">Produk Kami</h2>
+            <p class="text-sm text-gray-600  mb-8">Temukan Produk yang Sesuai dengan Kebutuhanmu</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/19L-212.png" alt="212-Galon 19 Liter" class="w-full h-32 object-contain mb-2">
+                    <p class="text-sm font-semibold text-gray-800 p-1">212 - Galon 19 Liter</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/1500-212.png" alt="212-Mineral 1500 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">212 - Mineral 1500 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/600-212.png" alt="212-Mineral 600 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">212 - Mineral 600 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/330-212.png" alt="212-Mineral 330 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">212 - Mineral 330 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/240-212.png" alt="212-Mineral 240 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">212 - Mineral 240 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/19L-Bisto.png" alt="Bisto-Galon 19 Liter" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">Bisto - Galon 19 Liter</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/1500-Bisto.png" alt="Bisto-Mineral 1500 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">Bisto - Mineral 1500 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/600-Bisto.png" alt="Bisto-Mineral 600 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">Bisto - Mineral 600 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/330-Bisto.png" alt="Bisto-Mineral 330 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">Bisto - Mineral 330 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/220-Bisto.png" alt="Bisto-Mineral 220 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">Bisto - Mineral 220 ml</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
+                    <img src="/src/img/200-Bisto.png" alt="Bisto-Mineral 200 ml" class="w-full h-32 object-contain mb-2 rounded-xl">
+                    <p class="text-sm font-semibold text-gray-800 p-1">Bisto - Mineral 200 ml</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricelist Produk -->
+    <section class="p-10 bg-blue-50 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Pricelist Produk Kami</h2>
+        <p class="text-gray-600 mt-2">Cek harga sesuai dengan peran Anda.</p>
+        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg">Lihat Harga</button>
+    </section>
+
+    <!-- Lokasi -->
+    <section class="p-10">
+        <h2 class="text-3xl font-bold text-gray-800 text-center">Lokasi BIBU AMDK</h2>
+        <div class="w-full h-56 bg-gray-200 rounded-lg mt-4 flex items-center justify-center">
+            Map Placeholder
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="p-10 bg-blue-100 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Butuh informasi lebih lanjut?</h2>
+        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg">Hubungi Kami</button>
+    </section>
+
+</body>
+</html>
