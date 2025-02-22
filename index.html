@@ -38,8 +38,8 @@
             <h1 class="text-[38px] font-bold text-[#272f78]">Rasakan Kesegaran Alami dalam Setiap Tetes</h1>
             <p class="text-gray-600 mt-2">Dapatkan air minum berkualitas tinggi dengan kemurnian terbaik untuk hari yang lebih segar.</p>
             <div class="mt-4 flex gap-4">
-                <button class="bg-[#272f78] border text-white px-5 py-2 rounded-full hover:bg-white border-[#272f78] hover:text-[#272f78]">Beli Sekarang</button>
-                <button class="border border-[#272f78] text-[#272f78] hover:bg-[#272f78] hover:text-white px-5 py-2 rounded-full">Hubungi Kami</button>
+                <a href="#" class="bg-[#272f78] border text-white px-5 py-2 rounded-full hover:bg-white border-[#272f78] hover:text-[#272f78]">Beli Sekarang</a>
+                <a href="#" class="border border-[#272f78] text-[#272f78] hover:bg-[#272f78] hover:text-white px-5 py-2 rounded-full">Hubungi Kami</a>
             </div>
           </div>
           <img src="/src/img/404 (1).png" alt="" class="w-[700px] h-auto mt-[-50px] mr-[-50px]">
@@ -63,13 +63,13 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Product Section -->
     <section id="produk" class="py-16">
         <div class="container mx-auto text-center items-center justify-center">
-            <h2 class="text-4xl font-semibold">Produk Kami</h2>
+            <h2 class="text-5xl font-semibold">Produk Kami</h2>
             <p class="text-sm text-gray-600  mb-8">Temukan Produk yang Sesuai dengan Kebutuhanmu</p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="bg-white rounded-lg shadow-md p-3 max-w-[230px]">
                     <img src="/src/img/19L-212.png" alt="212-Galon 19 Liter" class="w-full h-32 object-contain mb-2">
                     <p class="text-sm font-semibold text-gray-800 p-1">212 - Galon 19 Liter</p>
@@ -119,25 +119,76 @@
     </section>
 
     <!-- Pricelist Produk -->
-    <section class="p-10 bg-blue-50 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">Pricelist Produk Kami</h2>
-        <p class="text-gray-600 mt-2">Cek harga sesuai dengan peran Anda.</p>
-        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg">Lihat Harga</button>
+    <section id="pricelist" class="bg-blue-100 py-10">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="w-1/2">
+                <img src="/src/img/bisto.png" alt="Galon Bisto" class="w-[700px] h-auto">
+            </div>
+            <div class="w-1/2 px-8">
+                <h2 class="text-6xl font-semibold mb-4">Pricelist <br>Produk Kami</h2>
+                <p class="text-gray-600 mb-6">Temukan Daftar Harga Lengkap Berdasarkan Kategori Pembeli, Mulai dari Agen hingga End User</p>
+                <a href="#" class="bg-[#272f78] border text-white px-5 py-2 rounded-full hover:bg-white border-[#272f78] hover:text-[#272f78]">Lihat Pricelist</a>
+            </div>
+        </div>
     </section>
-
+    
     <!-- Lokasi -->
-    <section class="p-10">
-        <h2 class="text-3xl font-bold text-gray-800 text-center">Lokasi BIBU AMDK</h2>
+    <!-- <section class="p-10 my-10">
+        <h2 class="text-5xl font-semibold text-center">Lokasi BIBU AMDK</h2>
         <div class="w-full h-56 bg-gray-200 rounded-lg mt-4 flex items-center justify-center">
             Map Placeholder
         </div>
-    </section>
+    </section> -->
 
     <!-- Contact Section -->
-    <section class="p-10 bg-blue-100 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">Butuh informasi lebih lanjut?</h2>
-        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg">Hubungi Kami</button>
+    <section id="kontak" class="bg-white py-10">
+        <div class="container mx-auto">
+            <div class="border border-[#272f78] rounded-lg p-12 flex items-center justify-between">
+                <div>
+                    <h2 class="text-2xl font-semibold text-[#272f78] mb-2">Butuh informasi lebih lanjut?</h2>
+                    <p class="text-gray-600">Jangan ragu untuk menghubungi kami melalui kontak di samping.</p>
+                </div>
+                <a href="#" class="bg-[#272f78] border text-white px-5 py-2 rounded-full hover:bg-white border-[#272f78] hover:text-[#272f78]">Hubungi Kami</a>
+            </div>
+        </div>
     </section>
+
+    <!-- footer -->
+    <footer class="bg-blue-100 py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div class="col-span-2">
+                <div class="flex items-center mb-4">
+                    <img src="/src/img/logo.png" alt="Logo Fresh Water" class="h-10 mr-2">
+                    <span class="font-bold">BIBU AMDK</span>
+                </div>
+                <p class="text-gray-600 mb-4">Donec vel ligula ornare, finibus ex at, viverra risus. Aenean velit ex, finibus elementum eu, dignissim varius augue.</p>
+                <p class="text-gray-600"><a href="mailto:www.fresh@water.com" class="hover:underline">www.fresh@water.com</a></p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-blue-800 mb-4">Information</h3>
+                <ul class="text-gray-600">
+                    <li class="mb-2"><a href="URL_CONTACT" class="hover:underline">Contact Us</a></li>
+                    <li class="mb-2"><a href="URL_ABOUT" class="hover:underline">About Us</a></li>
+                    <li class="mb-2"><a href="URL_DELIVERY" class="hover:underline">Delivery Information</a></li>
+                    <li class="mb-2"><a href="URL_PRIVACY" class="hover:underline">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="URL_TERMS" class="hover:underline">Terms & Conditions</a></li>
+                    <li class="mb-2"><a href="URL_PRIVACY2" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-blue-800 mb-4">Get In Touch</h3>
+                <div class="text-gray-600">
+                    <p class="font-semibold text-blue-800 mb-2">BIBU AMDK</p>
+                    <p class="mb-2">45 Grand Central Terminal<br>New York</p>
+                    <p class="mb-2">+00123654789</p>
+                    <p><a href="mailto:freshwater@gmail.com" class="hover:underline">freshwater@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-gray-600">© All Rights Reserved BIBU 2025.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
