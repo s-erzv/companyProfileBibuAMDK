@@ -5,3 +5,15 @@
 body{
     @apply font-poppins;
 }
+
+.nav-link {
+    @apply text-black text-sm font-medium px-3 py-2 rounded-full transition-all hover:text-white hover:bg-[#6f78c9] shadow-sm;
+}
+
+.active {
+    @apply bg-[#272F78] text-white shadow-md;
+}
+
+section {
+    scroll-margin-top: 90px; /* Sesuai tinggi header */
+}

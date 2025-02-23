@@ -1,24 +1,32 @@
-const navResponsive = document.getElementById('nav-mobile');
+const menu = document.getElementById("mobile-menu");
+const menuBtn = document.getElementById("menu-btn");
 
-function menuOnMobile(){
-    navResponsive.classList.toggle('hidden');
+function toggleMenu() {
+    menu.classList.toggle("translate-y-0");
+    menu.classList.toggle("-translate-y-full");
 }
 
+function closeMenu() {
+    menu.classList.add("-translate-y-full");
+    menu.classList.remove("translate-y-0");
+}
 
-const navLinks = document.querySelectorAll('nav a[href^="#"]');
+// Toggle menu saat tombol hamburger diklik
+menuBtn.addEventListener("click", function (event) {
+    toggleMenu();
+    event.stopPropagation(); // Cegah klik dari menutup langsung
+});
 
-navLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault(); 
-
-    const targetId = link.getAttribute('href').substring(1);
-
-    document.getElementById(targetId).scrollIntoView({ 
-      behavior: 'smooth' 
+// Tutup menu saat klik link di dalamnya
+document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener("click", function () {
+        closeMenu();
     });
+});
 
-    if (!navResponsive.classList.contains('hidden')) {
-      menuOnMobile(); 
+// Tutup menu saat klik di luar menu
+document.addEventListener("click", function (event) {
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+        closeMenu();
     }
-  });
 });
